@@ -1,0 +1,45 @@
+main {
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  grid-template-rows: 70px 70px 120px 120px 80px;
+
+  grid-template-areas:
+    "h h"
+    "n n"
+    "s as"
+    "ar as"
+    "f f";
+  gap: 10px;
+  padding: 15px;
+  background-color: lightcoral;
+}
+
+header {
+  grid-area: h;
+  background-color: burlywood;
+}
+nav {
+  grid-area: n;
+  background-color: aqua;
+}
+article {
+  grid-area: ar;
+  background-color: lightsalmon;
+}
+section {
+  grid-area: s;
+  background-color: goldenrod;
+}
+aside {
+  grid-area: as;
+  background-color: rgba(165, 42, 42, 0.582);
+}
+footer {
+  grid-area: f;
+  background-color: aquamarine;
+}
+header, nav, section, article, aside, footer {
+  display: grid;
+  place-items: center;
+  border: 3px grey;
+}
